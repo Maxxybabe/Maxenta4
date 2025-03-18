@@ -38,6 +38,9 @@ DB_NAME = os.environ.get("DATABASE_NAME", "bot13")
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002311266823"))
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002311266823"))
 
+#Chameloen Channel 
+CHNL_LNK = os.environ.get('CHNL_LNK', 'https://t.me/+Nfx1Y4fI-DdlMjg0')
+
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
