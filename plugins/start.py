@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
 
 from bot import Bot
-from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
+from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, CHNL_LNK, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
@@ -117,7 +117,8 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="Join Channel 1", url=client.invitelink),
+            InlineKeyboardButton(text="Join Channel 1", url=CHNL_LNK),
+            InlineKeyboardButton(text="Join Channel 2", url=client.invitelink),
             InlineKeyboardButton(text="Join Channel 2", url=client.invitelink2),
         ]
     ]
