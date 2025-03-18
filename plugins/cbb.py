@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>Maxenta</a>\n○ ᴜᴘᴅᴀᴛᴇs : <a href='https://t.me/iBOX_TV'>iBOX TV</a>\n○ ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs : <a href='https://t.me/iBOXTVMOVIES'>Maxenta FAMILY</a>\n○ ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ : <a href='https://t.me/maxenta'>Search Movies</a>\n○ Movie Search ᴄʜᴀᴛ : <a href='https://t.me/requestmaxenta'>Maxenta</a></b>",
+            text = f"<b>○ ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>Maxenta</a>\n○ ᴜᴘᴅᴀᴛᴇs : <a href='https://t.me/maxenta'>Maxenta Series</a>\n○ ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs : <a href='https://t.me/Requestmaxenta'>Maxenta FAMILY</a>\n○ ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ : <a href='https://t.me/maxenta'>Search Movies</a>\n○ Movie Search ᴄʜᴀᴛ : <a href='https://t.me/requestmaxenta'>Maxenta</a></b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
